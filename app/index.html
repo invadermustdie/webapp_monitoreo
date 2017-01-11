@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Modulo de Monitoreo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../bower_components/datatables/media/css/jquery.dataTables.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="../bower_components/metisMenu/dist/metisMenu.min.css"/>
+    <link rel="stylesheet" href="../bower_components/morrisjs/morris.css"/>
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bower_components/datatables-responsive/css/dataTables.responsive.css"/>
+    <link rel="stylesheet" href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="../bower_components/angular-ui/ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="../bower_components/leaflet/leaflet.css">
+    <link rel="stylesheet" href="styles/sbadmin/dist/css/sb-admin-2.css">
+
+</head>
+<body ng-app="proyecto1App">
+
+<!---------- aqui estaba el menu de navegacion y superior ---------->
+
+<div id="wrapper">
+    <div ng-view="">
+        <!--------------------------------Muestra el contendio de mis vistas ----------------------------------------->
+    </div>
+</div>
+
+<div class="footer">
+    <!--div class="container">
+        <p><span class="fa fa-envelope"></span> Manejo de contenido desde el proyecto principal</p>
+    </div-->
+</div>
+
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="../bower_components/angular-resource/angular-resource.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="../bower_components/angular-touch/angular-touch.js"></script>
+<script src="../bower_components/angular-ui/ui-grid/ui-grid.js"></script>
+<script src="../bower_components/datatables/media/js/jquery.dataTables.js"></script>
+<script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/flot/jquery.flot.js"></script>
+<script src="../bower_components/holderjs/holder.js"></script>
+<script src="../bower_components/eve/eve.js"></script>
+<script src="../bower_components/raphael/raphael.min.js"></script>
+<script src="../bower_components/mocha/mocha.js"></script>
+<script src="../bower_components/morrisjs/morris.js"></script>
+<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+<script src="../bower_components/datatables-responsive/js/dataTables.responsive.js"></script>
+<script src="../bower_components/flot.tooltip/js/jquery.flot.tooltip.js"></script>
+<script src="../bower_components/angular-leaflet/dist/angular-leaflet-directive.js"></script>
+<script src="styles/sbadmin/dist/js/sb-admin-2.js"></script>
+<!-- endbower -->
+
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/login.js"></script>
+
+<!---------------------------- dashobard principal y control de proyectos --------------------------------------------->
+<script src="scripts/controllers/dashboard/dashboard.js"></script>
+
+<!--------------------------------departamento de La Paz -------------------------------------------------------------->
+<script src="scripts/controllers/lapaz/calidadLaPaz.js"></script>
+<script src="scripts/controllers/lapaz/coberturaLaPaz.js"></script>
+<script src="scripts/controllers/lapaz/rendimientoLaPaz.js"></script>
+
+<!--------------------------------departamento de Chuquisaca --------------------------------------------------------->
+<script src="scripts/controllers/chuquisaca/calidadChuquisaca.js"></script>
+<script src="scripts/controllers/chuquisaca/coberturaChuquisaca.js"></script>
+<script src="scripts/controllers/chuquisaca/rendimientoChuquisaca.js"></script>
+
+<!--------------------------------prueba ---------------------------------------------------------->
+<script src="scripts/controllers/prueba/calidadPrueba.js"></script>
+<script src="scripts/controllers/prueba/coberturaPrueba.js"></script>
+<script src="scripts/controllers/prueba/rendimientoPrueba.js"></script>
+<!------------------------------------------------------------------------------------------------------------------!>
+<!--charts-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!--ng-maps-->
+<!--script src="bower_components/angular/angular.js"></script-->
+<script src="../bower_components/ngmap/ng-map.min.js"></script>
+<!--google maps INE key-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYmoCggdKMEa2JIYxbZya9MwR9A9ooZWQ"
+        type="text/javascript"></script>
+<!--Manejo de libreias leaflet -->
+<script src="../bower_components/leaflet/leaflet.js"></script>
+<!--smart table-->
+<script src="../bower_components/smarttable/smart-table.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<!--menu superior de el proyecto -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Menu de Navegacion</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ng-href="#/">Monitor Control de Operativos</a>
+    </div>
+</nav>
+    <!--********************************  Aqui comienza mi pagina principal de muestra de informacion  DASHBOARD principal********************************************* -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Autentificaciòn</h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form" id="miLogin" action="/">
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Usuario" type="text" autofocus id="username"
+                                       ng-model="username" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Contraseña" id="password" type="password"
+                                       ng-model="password" required>
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <button class="btn btn-lg btn-success btn-block" type="button" ng-click="submit()">
+                                Ingresar
+                            </button>
+                        </fieldset>
+                        <br>
+                        <div class="alert alert-danger" ng-show="verMensaje">
+                            <h4>{{mensaje}}</h4>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

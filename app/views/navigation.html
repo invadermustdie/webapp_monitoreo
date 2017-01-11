@@ -1,0 +1,89 @@
+<!-- ********************************************* Navigation ************************************************* -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0;">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Menu de Navegacion</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ng-href="#/dashboard">Monitor Control de Operativos</a>
+    </div>
+    <!-- /.navbar-header ----------------------------------------------------------------------------------------->
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-user">
+                <li><a ng-href="#/dashboard"><i class="fa fa-user fa-fw"></i> Perfil Usuario</a>
+                </li>
+                <li><a ng-href="#/dashboard"><i class="fa fa-gear fa-fw"></i> Configuraciones</a>
+                </li>
+                <li class="divider"></li>
+                <li><a ng-href="#/login"><i class="fa fa-sign-out fa-fw"></i> Salir</a>
+                </li>
+            </ul>
+            <!-- /.dropdown-user -->
+        </li>
+    </ul>
+    <!-- /.navbar-lateral ----------------------------------------------------------------------------------------->
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-default">
+            <ul class="nav" id="side-menu">
+                <!-- menu Lateral de navegacion   ----------------------------------------------------------------->
+                <li>
+                    <h4>&emsp;<a ng-href="#/dashboard"><i class="fa fa-th"></i> Dashboard</a></h4>
+                </li>
+                <li ng-show="data.boton1">
+                    <a ng-href=""><i class="fa fa-bar-chart-o fa-fw"></i> Chuquisaca<span
+                            class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a ng-href="#/coberturaChuquisaca"> Cobertura</a>
+                        </li>
+                        <li>
+                            <a ng-href="#/calidadChuquisaca"> Calidad</a>
+                        </li>
+                        <li>
+                            <a ng-href="#/rendimientoChuquisaca"> Rendimiento</a>
+                        </li>
+                    </ul>
+                </li>
+                <li ng-show="data.boton2">
+                    <a ng-href=""><i class="fa fa-bar-chart-o fa-fw"></i> La Paz<span
+                            class="fa arrow"></span></a>
+                    <!--h4>&emsp;<a ng-href="#/proyecto1Pagina1"><i class="fa fa-life-saver"></i> Pagina 1</a></h4-->
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a ng-href="#/coberturaLaPaz"> Cobertura</a>
+                        </li>
+                        <li>
+                            <a ng-href="#/calidadLaPaz"> Calidad</a>
+                        </li>
+                        <li>
+                            <a ng-href="#/rendimientoLaPaz"> Rendimiento</a>
+                        </li>
+                    </ul>
+                </li>
+                <li ng-show="data.boton3">
+                    <a ng-href=""><i class="fa fa-bar-chart-o fa-fw"></i> Pruebas<span
+                            class="fa arrow"></span></a>
+                    <!--h4>&emsp;<a ng-href="#/proyecto1Pagina1"><i class="fa fa-life-saver"></i> Pagina 1</a></h4-->
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a ng-href="#/coberturaPrueba"> Cobertura</a>
+                        </li>
+                        <li>
+                            <a ng-href="#/calidadPrueba"> Calidad</a>
+                        </li>
+                        <li>
+                            <a ng-href="#/rendimientoPrueba"> Rendimiento</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.sidebar-collapse -->
+    </div>
+    <!-- /.navbar-static-side -->
+</nav>
